@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text.Json.Serialization;
 
 namespace GlobaleAutoRaceKalender.Models
 {
@@ -11,6 +12,7 @@ namespace GlobaleAutoRaceKalender.Models
         public DateTime? EndDate { get; set; }
         public int SortOrder { get; set; }
         public bool IsActief => EndDate == null;
+        [JsonIgnore]
         public ICollection<Season> Seasons { get; set; }
 
     }

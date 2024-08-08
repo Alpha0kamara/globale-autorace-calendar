@@ -1,12 +1,10 @@
 ﻿using GlobaleAutoRaceKalender.Enums;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System;
 
-namespace GlobaleAutoRaceKalender.Models
+namespace GlobaleAutoRaceKalender.DTO
 {
-    public class Pilot
+    public class PilotAddDTO
     {
         public int Id { get; set; }
         [Required]
@@ -20,6 +18,5 @@ namespace GlobaleAutoRaceKalender.Models
         public int? Weight { get; set; }
         public int? Height { get; set; }
         public string PhotoPath { get; set; }
-        public ICollection<RaceEntry> RaceEntries { get; set; }
     }
 }
