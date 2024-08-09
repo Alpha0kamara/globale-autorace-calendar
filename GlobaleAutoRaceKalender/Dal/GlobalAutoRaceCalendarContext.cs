@@ -222,15 +222,6 @@ namespace GlobaleAutoRaceKalender.Dal
                     StartDate = new DateTime(2024, 3, 10),
                     EndDate = new DateTime(2024, 11, 17),
                     IsActive = true
-                },
-                new Season
-                {
-                    Id = 6,
-                    Name = "2024 NASCAR Season",
-                    SeriesId = 6, // NASCAR Cup Series
-                    StartDate = new DateTime(2024, 2, 18),
-                    EndDate = new DateTime(2024, 11, 3),
-                    IsActive = true
                 });
             #endregion
 
@@ -316,3 +307,4 @@ namespace GlobaleAutoRaceKalender.Dal
         }
     }
 }
+ 

@@ -72,11 +72,6 @@ namespace GlobaleAutoRaceKalender.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "Seasons",
-                columns: new[] { "Id", "EndDate", "IsActive", "Name", "SeriesId", "StartDate" },
-                values: new object[] { 6, new DateTime(2024, 11, 3, 0, 0, 0, 0, DateTimeKind.Unspecified), true, "2024 NASCAR Season", 6, new DateTime(2024, 2, 18, 0, 0, 0, 0, DateTimeKind.Unspecified) });
-
-            migrationBuilder.InsertData(
                 table: "Series",
                 columns: new[] { "Id", "EndDate", "Name", "SortOrder", "StartDate" },
                 values: new object[,]
@@ -262,11 +257,6 @@ namespace GlobaleAutoRaceKalender.Migrations
                 table: "Seasons",
                 keyColumn: "Id",
                 keyValue: 5);
-
-            migrationBuilder.DeleteData(
-                table: "Seasons",
-                keyColumn: "Id",
-                keyValue: 6);
 
             migrationBuilder.DeleteData(
                 table: "Pilots",

@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GlobaleAutoRaceKalender.Migrations
 {
     [DbContext(typeof(GlobalAutoRaceCalendarContext))]
-    [Migration("20240808215947_AddedDataSeed")]
+    [Migration("20240809112029_AddedDataSeed")]
     partial class AddedDataSeed
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -370,15 +370,6 @@ namespace GlobaleAutoRaceKalender.Migrations
                             Name = "2024 MotoGP Season",
                             SeriesId = 5,
                             StartDate = new DateTime(2024, 3, 10, 0, 0, 0, 0, DateTimeKind.Unspecified)
-                        },
-                        new
-                        {
-                            Id = 6,
-                            EndDate = new DateTime(2024, 11, 3, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            IsActive = true,
-                            Name = "2024 NASCAR Season",
-                            SeriesId = 6,
-                            StartDate = new DateTime(2024, 2, 18, 0, 0, 0, 0, DateTimeKind.Unspecified)
                         });
                 });
 
