@@ -27,7 +27,7 @@ namespace GlobaleAutoRaceKalender.Dal
             modelBuilder.ApplyConfiguration(new SeasonConfiguration());
             modelBuilder.ApplyConfiguration(new RaceConfiguration());
             modelBuilder.ApplyConfiguration(new RaceEntryConfiguration());
-            SeedData(modelBuilder);
+            //SeedData(modelBuilder);
         }
 
         private void SeedData(ModelBuilder builder)

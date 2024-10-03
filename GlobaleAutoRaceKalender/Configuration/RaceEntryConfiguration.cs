@@ -13,14 +13,14 @@ namespace GlobaleAutoRaceKalender.Configuration
                 .HasForeignKey(r => r.RaceId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            builder.HasOne(t => t.Team)
+           .WithMany(r => r.RaceEntries)
+           .HasForeignKey(t => t.TeamId)
+           .OnDelete(DeleteBehavior.Restrict);
+
             builder.HasOne(p => p.Pilot)
                 .WithMany(r => r.RaceEntries)
                 .HasForeignKey(p => p.PilotId)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            builder.HasOne(t => t.Team)
-                .WithMany(r => r.RaceEntries)
-                .HasForeignKey(t => t.TeamId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder.Property(r => r.RaceId).IsRequired();
